@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+
+<script type="text/javascript">	
+
+	function pulaLinha(){
+		document.write("<br>");
+	}
+
+	function mostra(mensagem){
+		document.write(mensagem);
+		pulaLinha();
+	}
+
+	function calculaImc(altura, peso) {
+
+		return peso / (altura * altura);
+	}
+
+		var nome = prompt("Informe seu nome."); // prompt é uma função do javacript que capturar a entrada do usuário
+		var informeAltura = prompt(nome+ ", informe sua altura (utilize ponto entre os números)");
+		var informePeso = prompt(nome+ ", informe seu peso");
+
+		var imc = calculaImc(informeAltura, informePeso);
+
+		mostra (nome+ ", seu IMC é: " +imc);
+
+</script>
